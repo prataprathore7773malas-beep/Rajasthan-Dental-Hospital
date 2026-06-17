@@ -1,0 +1,1423 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  // FAQ Accordion
+
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+
+      document.querySelectorAll(".faq-answer").forEach(ans => {
+
+        if(ans !== answer){
+          ans.style.display = "none";
+        }
+
+      });
+
+      if(answer.style.display === "block"){
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+
+    });
+
+  });
+
+  // Smooth Scroll
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function(e) {
+
+      e.preventDefault();
+
+      const target = document.querySelector(
+        this.getAttribute("href")
+      );
+
+      if(target){
+
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+
+      }
+
+    });
+
+  });
+
+  // Navbar Shadow
+
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+
+    if(!header) return;
+
+    if(window.scrollY > 50){
+
+      header.style.boxShadow =
+      "0 10px 25px rgba(0,0,0,0.15)";
+
+    } else {
+
+      header.style.boxShadow =
+      "0 2px 10px rgba(0,0,0,0.05)";
+
+    }
+
+  });
+
+});
+
+console.log("Sahara Dental Care Loaded Successfully");<!-- ABOUT SECTION -->
+
+<section id="about" class="about-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+About New Rajasthan Dental Hospital
+</span>
+
+<h2>
+Trusted Dental Care In Neem Ka Thana
+</h2>
+
+<p>
+
+Providing quality dental care with a strong focus
+on patient comfort, trust and long-term satisfaction.
+
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<!-- LEFT -->
+
+<div class="about-content">
+
+<h3>
+15 Years Of Healthcare Experience
+</h3>
+
+<p>
+
+New Rajasthan Dental Hospital has built a strong
+reputation in Neem Ka Thana through its commitment
+to patient care and professional healthcare services.
+
+With 15 years of experience in healthcare,
+the hospital continues to serve patients with
+dedication and compassion.
+
+</p>
+
+<p>
+
+Conveniently located at Front Of TVS Motor,
+Sabra Road, Adarsh Colony-Kurbada,
+the hospital is easily accessible and trusted
+by patients from Neem Ka Thana and nearby areas.
+
+</p>
+
+<div class="about-features">
+
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>15 Years Experience</span>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>4.7 Star Rating</span>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>163+ Reviews</span>
+</div>
+
+<div class="feature-item">
+<i class="fas fa-check-circle"></i>
+<span>Patient-Centered Care</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="about-cards">
+
+<div class="info-card">
+
+<div class="icon-box">
+<i class="fas fa-hospital"></i>
+</div>
+
+<h4>
+15 Years In Healthcare
+</h4>
+
+<p>
+
+Serving patients with dedication,
+care and professional healthcare support.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="icon-box">
+<i class="fas fa-star"></i>
+</div>
+
+<h4>
+Highly Rated
+</h4>
+
+<p>
+
+Rated 4.7 based on patient reviews
+and community trust.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="icon-box">
+<i class="fas fa-users"></i>
+</div>
+
+<h4>
+163+ Reviews
+</h4>
+
+<p>
+
+Trusted by a growing number of
+patients and families.
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="icon-box">
+<i class="fas fa-heart"></i>
+</div>
+
+<h4>
+Patient Comfort
+</h4>
+
+<p>
+
+Focused on creating a positive
+and welcoming experience.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOSPITAL OVERVIEW -->
+
+<section class="overview-section">
+
+<div class="container">
+
+<div class="overview-grid">
+
+<div class="overview-card">
+
+<i class="fas fa-user-doctor"></i>
+
+<h3>
+Professional Care
+</h3>
+
+<p>
+
+Dedicated healthcare professionals
+focused on patient wellbeing and comfort.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<i class="fas fa-hospital"></i>
+
+<h3>
+Modern Environment
+</h3>
+
+<p>
+
+Clean, organized and patient-friendly
+hospital environment.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<i class="fas fa-location-dot"></i>
+
+<h3>
+Easy Accessibility
+</h3>
+
+<p>
+
+Located at Adarsh Colony-Kurbada,
+Neem Ka Thana for convenient access.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- WHY CHOOSE US -->
+
+<section id="features" class="why-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Why Choose Us
+</span>
+
+<h2>
+Why Patients Trust New Rajasthan Dental Hospital
+</h2>
+
+<p>
+
+Combining experience, patient care,
+and a commitment to quality healthcare.
+
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-hospital"></i>
+</div>
+
+<h3>
+15 Years Experience
+</h3>
+
+<p>
+
+Serving the community with trusted
+healthcare services for over 15 years.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-user-doctor"></i>
+</div>
+
+<h3>
+Professional Team
+</h3>
+
+<p>
+
+Dedicated healthcare professionals
+focused on patient wellbeing and comfort.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-star"></i>
+</div>
+
+<h3>
+4.7 Star Rating
+</h3>
+
+<p>
+
+Highly rated by patients for quality care,
+service and overall experience.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-users"></i>
+</div>
+
+<h3>
+163+ Reviews
+</h3>
+
+<p>
+
+Trusted by hundreds of patients and families
+across Neem Ka Thana.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+
+<h3>
+Convenient Location
+</h3>
+
+<p>
+
+Located at Front Of TVS Motor,
+Sabra Road, Adarsh Colony-Kurbada.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fas fa-heart"></i>
+</div>
+
+<h3>
+Patient First Approach
+</h3>
+
+<p>
+
+Focused on creating a comfortable,
+welcoming and supportive environment.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS SECTION -->
+
+<section class="stats-section">
+
+<div class="container">
+
+<div class="stats-wrapper">
+
+<div class="stat-card">
+
+<h2>15+</h2>
+
+<p>
+Years In Healthcare
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>163+</h2>
+
+<p>
+Patient Reviews
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>4.7★</h2>
+
+<p>
+Average Rating
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>100%</h2>
+
+<p>
+Patient Focused Care
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PATIENT CARE SECTION -->
+
+<section class="care-section">
+
+<div class="container">
+
+<div class="care-wrapper">
+
+<div class="care-left">
+
+<span class="section-tag">
+Patient Care
+</span>
+
+<h2>
+Committed To Better Patient Experience
+</h2>
+
+<p>
+
+At New Rajasthan Dental Hospital,
+patient satisfaction and comfort remain
+at the heart of everything we do.
+
+Our goal is to provide a welcoming
+healthcare environment where patients
+feel valued, informed and supported.
+
+</p>
+
+<p>
+
+From consultation to follow-up care,
+the focus remains on delivering a smooth,
+comfortable and positive healthcare journey.
+
+</p>
+
+<a href="#contact"
+class="primary-btn">
+
+Book Appointment
+
+</a>
+
+</div>
+
+<div class="care-right">
+
+<div class="glass-box">
+
+<i class="fas fa-star"></i>
+
+<h3>
+Trusted Reputation
+</h3>
+
+<p>
+
+Recognized for quality healthcare
+and positive patient experiences.
+
+</p>
+
+</div>
+
+<div class="glass-box">
+
+<i class="fas fa-users"></i>
+
+<h3>
+Community Trust
+</h3>
+
+<p>
+
+Serving patients from Neem Ka Thana
+and surrounding areas.
+
+</p>
+
+</div>
+
+<div class="glass-box">
+
+<i class="fas fa-heart"></i>
+
+<h3>
+Compassionate Care
+</h3>
+
+<p>
+
+Focused on patient comfort,
+support and wellbeing.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- REVIEWS SECTION -->
+
+<section id="reviews" class="reviews-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Patient Reviews
+</span>
+
+<h2>
+What Patients Say About Us
+</h2>
+
+<p>
+
+Trusted by patients across Neem Ka Thana
+for quality healthcare and patient-focused care.
+
+</p>
+
+</div>
+
+<!-- REVIEW SUMMARY -->
+
+<div class="review-summary">
+
+<div class="rating-box">
+
+<h2>4.7★</h2>
+
+<p>Average Rating</p>
+
+<span>Based on 163 Reviews</span>
+
+</div>
+
+<div class="rating-content">
+
+<h3>
+Trusted By Hundreds Of Patients
+</h3>
+
+<p>
+
+New Rajasthan Dental Hospital has earned
+a strong reputation through patient trust,
+quality healthcare services and a commitment
+to providing a comfortable healthcare experience.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- REVIEW CARDS -->
+
+<div class="reviews-grid">
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+Patients appreciate the hospital's
+professional environment and supportive staff.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+Many visitors highlight the quality care
+and attention received during their visits.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+The hospital is known for creating a
+comfortable and welcoming atmosphere.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+Patients value the professionalism,
+guidance and healthcare support provided.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+Convenient location and positive experiences
+have helped build strong patient trust.
+
+</p>
+
+</div>
+
+<div class="review-card">
+
+<div class="review-top">
+<h4>⭐⭐⭐⭐⭐</h4>
+</div>
+
+<p>
+
+A trusted healthcare destination serving
+patients and families across the region.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEW HIGHLIGHTS -->
+
+<section class="highlights-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Review Highlights
+</span>
+
+<h2>
+Why Patients Recommend Us
+</h2>
+
+</div>
+
+<div class="highlight-grid">
+
+<div class="highlight-card">
+
+<i class="fas fa-star"></i>
+
+<h3>
+4.7 Star Rating
+</h3>
+
+<p>
+
+Highly rated by patients for quality care
+and positive healthcare experiences.
+
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<i class="fas fa-users"></i>
+
+<h3>
+163+ Reviews
+</h3>
+
+<p>
+
+Growing trust from patients and families
+throughout Neem Ka Thana.
+
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<i class="fas fa-hospital"></i>
+
+<h3>
+15 Years Experience
+</h3>
+
+<p>
+
+Long-standing commitment to healthcare
+and patient wellbeing.
+
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<i class="fas fa-heart"></i>
+
+<h3>
+Patient Satisfaction
+</h3>
+
+<p>
+
+Focused on creating comfortable and
+positive healthcare experiences.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA SECTION -->
+
+<section class="review-cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+Experience Trusted Healthcare
+</h2>
+
+<p>
+
+Join the hundreds of patients who trust
+New Rajasthan Dental Hospital.
+
+</p>
+
+<a href="#contact"
+class="primary-btn">
+
+Book Appointment
+
+</a>
+
+</div>
+
+</div>
+
+</section> <!-- FAQ SECTION -->
+
+<section id="faq" class="faq-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Frequently Asked Questions
+</span>
+
+<h2>
+Common Questions
+</h2>
+
+<p>
+
+Find answers to the most commonly asked questions.
+
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<div class="faq-question">
+How can I contact New Rajasthan Dental Hospital?
+</div>
+
+<div class="faq-answer">
+
+You can contact New Rajasthan Dental Hospital
+by calling +91 7947433592 during working hours.
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+Where is the hospital located?
+</div>
+
+<div class="faq-answer">
+
+Front Of TVS Motor,
+Sabra Road,
+Adarsh Colony-Kurbada,
+Neem Ka Thana,
+Rajasthan - 332713.
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How many years of experience does the hospital have?
+</div>
+
+<div class="faq-answer">
+
+The hospital has 15 years of healthcare
+experience and continues to serve patients
+with dedication and care.
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+What are the hospital timings?
+</div>
+
+<div class="faq-answer">
+
+Monday to Saturday:
+9:30 AM – 6:30 PM
+
+Sunday:
+Closed
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+Do I need an appointment before visiting?
+</div>
+
+<div class="faq-answer">
+
+Appointments are recommended for a smooth
+and convenient healthcare experience.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Contact Us
+</span>
+
+<h2>
+Book Your Appointment
+</h2>
+
+<p>
+
+Get in touch with New Rajasthan Dental Hospital today.
+
+</p>
+
+</div>
+
+<div class="contact-wrapper">
+
+<!-- FORM -->
+
+<div class="contact-form-box">
+
+<form class="appointment-form">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+type="email"
+placeholder="Email Address">
+
+<textarea
+rows="6"
+placeholder="Tell us about your requirement">
+</textarea>
+
+<button
+type="submit"
+class="primary-btn">
+
+Book Appointment
+
+</button>
+
+</form>
+
+</div>
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+<div class="contact-card">
+
+<i class="fas fa-phone"></i>
+
+<h3>
+Call Us
+</h3>
+
+<p>
+
++91 7947433592
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fas fa-location-dot"></i>
+
+<h3>
+Visit Us
+</h3>
+
+<p>
+
+Front Of TVS Motor,
+Sabra Road,
+Adarsh Colony-Kurbada,
+Neem Ka Thana,
+Rajasthan - 332713
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fas fa-clock"></i>
+
+<h3>
+Working Hours
+</h3>
+
+<p>
+
+Monday - Saturday
+
+<br>
+
+9:30 AM - 6:30 PM
+
+<br><br>
+
+Sunday Closed
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUICK CONTACT -->
+
+<section class="quick-contact">
+
+<div class="container">
+
+<div class="quick-contact-box">
+
+<h2>
+Need Assistance?
+</h2>
+
+<p>
+
+Call or WhatsApp us for appointments
+and healthcare-related information.
+
+</p>
+
+<div class="quick-buttons">
+
+<a href="tel:+917947433592"
+class="primary-btn">
+
+Call Now
+
+</a>
+
+<a href="https://wa.me/917947433592"
+class="secondary-btn">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section> <!-- LOCATION SECTION -->
+
+<section class="location-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="section-tag">
+Our Location
+</span>
+
+<h2>
+Visit New Rajasthan Dental Hospital
+</h2>
+
+<p>
+
+Conveniently located at
+Front Of TVS Motor, Sabra Road,
+Neem Ka Thana.
+
+</p>
+
+</div>
+
+<div class="location-card">
+
+<div class="location-content">
+
+<h3>
+New Rajasthan Dental Hospital
+</h3>
+
+<p>
+
+📍 Front Of TVS Motor,
+Sabra Road,
+Adarsh Colony-Kurbada,
+Neem Ka Thana,
+Rajasthan - 332713
+
+</p>
+
+<p>
+
+📞 +91 7947433592
+
+</p>
+
+<p>
+
+🕒 Monday - Saturday
+
+<br>
+
+9:30 AM - 6:30 PM
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+<div class="container">
+
+<div class="final-cta-box">
+
+<h2>
+
+Healthy Smiles Begin Here
+
+</h2>
+
+<p>
+
+Experience trusted healthcare
+in a comfortable and welcoming environment.
+
+</p>
+
+<div class="cta-buttons">
+
+<a href="tel:+917947433592"
+class="primary-btn">
+
+Call Now
+
+</a>
+
+<a href="https://wa.me/917947433592"
+class="secondary-btn">
+
+WhatsApp Us
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a href="https://wa.me/917947433592"
+class="floating-whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- FLOATING CALL BUTTON -->
+
+<a href="tel:+917947433592"
+class="floating-call">
+
+<i class="fas fa-phone"></i>
+
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-column">
+
+<h3>
+New Rajasthan Dental Hospital
+</h3>
+
+<p>
+
+Trusted healthcare in Neem Ka Thana.
+
+Focused on patient comfort,
+quality care and a positive healthcare experience.
+
+</p>
+
+</div>
+
+<div class="footer-column">
+
+<h3>
+Quick Links
+</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#features">Why Us</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="footer-column">
+
+<h3>
+Contact Info
+</h3>
+
+<p>
+
+📍 Front Of TVS Motor,
+Sabra Road,
+Adarsh Colony-Kurbada,
+Neem Ka Thana,
+Rajasthan - 332713
+
+</p>
+
+<p>
+
+📞 +91 7947433592
+
+</p>
+
+<p>
+
+🕒 Mon - Sat
+9:30 AM - 6:30 PM
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2025 New Rajasthan Dental Hospital.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
